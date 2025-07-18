@@ -95,11 +95,11 @@
       const type = passwordInput.type === 'password' ? 'text' : 'password';
       passwordInput.type = type;
       if(type === 'text') {
-        eyeIcon.classList.remove('fa-eye');
-        eyeIcon.classList.add('fa-eye-slash');
-      } else {
         eyeIcon.classList.remove('fa-eye-slash');
         eyeIcon.classList.add('fa-eye');
+      } else {
+        eyeIcon.classList.remove('fa-eye');
+        eyeIcon.classList.add('fa-eye-slash');
       }
     });
   </script>
